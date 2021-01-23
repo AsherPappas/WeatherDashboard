@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- Navbar set for Weather Dashboard -->
+    <nav class="navbar navbar-dark bg-dark">
+        <span class="navbar-brand h1 w-100 x-large text-center">Weather Dashboard</span>
+    </nav>
+
+    <!-- Container for the main page -->
+    <div class="container">
+        <!-- Row for aligning the columns/sections -->
+        <div class="row">
+            <!-- Column for Search feature -->
+            <div class="col-4 bg-light">
+                <!-- Header for Search feature -->
+                <p class="search-header my-1">Search for a city</p>
+                                
+                <!-- Input for searching a city -->
+                <div class="input-group mb-3">
+                    <input id="city-input" type="text" class="form-control searchInput" placeholder="Enter city name" aria-label="Enter city name">
+                    <!-- Search button -->
+                    <div class="input-group-append">
+                        <button class="btn btn-primary searchButton" type="button" id="search-button">
+                        <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Clear History button to delete localStorage history -->
+                <button class="btn btn-primary mb-3" type="button" id="clear-history">Clear history</button>
+                
+                <!-- Stores the historical searchTerms -->
+                <form id="history"></form>
+            </div>
+
+            <!-- Current Weather of searched city -->
+            <div class="col-8">
+                <div class="row">
+                    <div class="col-12">
+                        <h3>Current Weather</h3>
+                    </div>
+                </div>
+                <div class="row mr-0">
+                    <div class="col-12 border border-dark m-3 rounded">
+                        <div class="row">
+                            <div class="col-12">
+                                <span id="city-name" class="city-name align-middle"></span>
+                                <img id="current-pic" src="" alt="">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <p id="temperature"></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <p id="humidity"></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <p id="wind-speed"></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 d-flex">
+                                <p id="UV-index"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Start of the 5-Day Forecast -->
+                <div class="row">
+                    <div class="col-12">
+                        <h3>5-Day Forecast</h3>
+                    </div>
+                </div>
+                <!-- Col for each day added -->
+                <div class="row">
+                    <div class="col forecast bg-primary text-white ml-3 mb-3 rounded"></div>
+                    <div class="col forecast bg-primary text-white ml-3 mb-3 rounded"></div>
+                    <div class="col forecast bg-primary text-white ml-3 mb-3 rounded"></div>
+                    <div class="col forecast bg-primary text-white ml-3 mb-3 rounded"></div>
+                    <div class="col forecast bg-primary text-white ml-3 mb-3 rounded"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
