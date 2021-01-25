@@ -1,9 +1,15 @@
 # Weather Dashboard
-## This app will use the OpenWeather API to retrieve weather data for requested cities.
+## 5 day forcast
 <br><br>
+### Description
+<p>This app will use the OpenWeather API to retrieve weather data for requested cities. This dashboard displays the current temparature, wind speed, humidity, and UV index. Along with a 5 day forcast for your selected city. The cities you search will be in your history on the left hand side of the page, you can clear that search history with the button on the screen.</p>
+<br><br>
+### Links
+[Live Site](https://asherpappas.github.io/WeatherDashboard/)
 <br>
-
-
+[Repo](https://github.com/AsherPappas/WeatherDashboard)
 <br>
-<p>Dashboard in Action</p>
-<img src = "weatherdashborad.png" width = 800>
+<br><br>
+### Screenshots
+<img src = "imgs/WeatherDashboard.png" width = 800>
+<br>
