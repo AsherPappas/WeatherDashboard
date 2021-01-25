@@ -6,7 +6,7 @@
 When a user initiates the webpage, the OpenWeatherMap API will lookup their coordinates. By allowing location tracker to run, their current location will be output into the Weather Dashboard.
 The 5-Day Forecast will show the next 5 days after the current day in individual cards. Each card will have the date, the weather picture, temperature, and humidity.</p>
 <br><br>
-#### Links
+Links
 [Live Site](https://asherpappas.github.io/WeatherDashboard/)
 <br>
 [Repo](https://github.com/AsherPappas/WeatherDashboard)
