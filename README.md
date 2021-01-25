@@ -12,6 +12,6 @@ Links
 [Repo](https://github.com/AsherPappas/WeatherDashboard)
 <br>
 <br><br>
-### Screenshots
+Screenshots
 <img src = "imgs/WeatherDashboard.png" width = 800>
 <br>
